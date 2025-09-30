@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi primer sitio web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fuente pixel retro -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Press Start 2P', Verdana, Tahoma, Arial, sans-serif;
+            background: repeating-linear-gradient(135deg, #e2eafc 0px, #e2eafc 30px, #c9d6e3 30px, #c9d6e3 60px);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(90deg, #6e93c7 0%, #c9d6e3 100%);
+            color: #232323;
+            padding: 28px 0 22px 0;
+            text-align: center;
+            box-shadow: 0 4px 18px rgba(110,147,199,0.18);
+            border-bottom: 3px solid #a0b2c7;
+            border-top: 3px solid #e2eafc;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto 14px auto;
+            width: 120px;
+            max-width: 90%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 8px #a0b2c799;
+            border: 2px solid #e2eafc;
+            background: #f6f9fc;
+            image-rendering: pixelated;
+        }
+        .author {
+            font-size: 0.9em;
+            margin-bottom: 2px;
+            text-shadow: 0 2px 4px #c9d6e3, 0 4px 8px #a0b2c7;
+            font-family: 'Press Start 2P', Verdana, Tahoma, Arial, sans-serif;
+        }
+        .ambiente {
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            background: linear-gradient(90deg, #c9d6e3 0%, #6e93c7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 8px #a0b2c799;
+            font-family: 'Press Start 2P', Verdana, Tahoma, Arial, sans-serif;
+        }
+        h1 {
+            margin-top: 10px;
+            font-size: 2em;
+            font-weight: bold;
+            font-family: 'Press Start 2P', Verdana, Tahoma, Arial, sans-serif;
+            text-shadow: 0 2px 6px #e2eafc, 0 1px 0 #a0b2c799;
+        }
+        main {
+            margin: 40px auto;
+            max-width: 700px;
+            background: linear-gradient(135deg, #f6f9fc 80%, #e2eafc 100%);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px #c9d6e333;
+            border: 2px solid #c9d6e3;
+        }
+        .retro-btn {
+            display: inline-block;
+            font-family: 'Press Start 2P', Verdana, Tahoma, Arial, sans-serif;
+            font-size: 1em;
+            padding: 10px 28px;
+            margin: 14px 0;
+            color: #232323;
+            background: linear-gradient(90deg, #c9d6e3 0%, #a0b2c7 100%);
+            border: 3px solid #e2eafc;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px #a0b2c788, 0 0 0 4px #e2eafc inset;
+            text-shadow: 0 2px 8px #f6f9fc;
+            cursor: pointer;
+            transition: transform 0.12s, box-shadow 0.12s;
+        }
+        .retro-btn:hover {
+            transform: scale(1.04);
+            box-shadow: 0 6px 18px #a0b2c777, 0 0 0 6px #e2eafcbb inset;
+        }
+        /* Barra inferior estilo XP */
+        .status-bar {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background: linear-gradient(90deg, #e2eafc 0%, #c9d6e3 100%);
+            color: #6e93c7;
+            font-family: 'Press Start 2P', Verdana, Tahoma, Arial, sans-serif;
+            font-size: 0.7em;
+            padding: 8px 0;
+            text-align: center;
+            box-shadow: 0 -2px 8px #c9d6e344;
+            border-top: 2px solid #a0b2c7;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Puedes poner aquí un logo retro PNG o GIF pixelado -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Crystal_Clear_app_kedit.png" alt="Logo Retro" class="logo">
+        <div class="author">Autor: joseapuma260-collab</div>
+        <div class="ambiente">Ambiente Tecnológico Retro 2000</div>
+        <h1>¡Bienvenido a mi web retro!</h1>
+    </header>
+    <main>
+        <p>
+            Este sitio está inspirado en los estilos tecnológicos de los años 2000, pero con colores más suaves y naturales.<br>
+            Disfruta los botones retro y el ambiente clásico digital.<br>
+            <button class="retro-btn">¡Haz clic aquí!</button>
+        </p>
+        <p>
+            <b>¿Recuerdas Winamp, Messenger y los fondos pixelados?</b> <br>
+            ¡Aquí revivimos esa época, pero sin brillos excesivos!
+        </p>
+    </main>
+    <div class="status-bar">
+        <span>Retro Web - by jose | 2000s Edition | © 2025</span>
+    </div>
+</body>
+</html>
